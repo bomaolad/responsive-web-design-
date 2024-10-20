@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Pricing Table Project</title>
+  
+  <style>
+    body{
+      font-family: sans-serif;
+    }
+  
+  .pricing-container{
+    display: flex;
+    gap: 10px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    }
+  .pricing-plan{
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+    background-color: grey;
+    border: 1rem;
+    padding: 1rem;
+    border-radius: 0.4rem;
+  }
+    .plan-title{
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .plan-price{
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    li{
+        list-style: none;
+        margin-bottom: 20px;
+    }
+      .plan-features{
+          parding: 0;
+          margin: 0;
+      }
+    .plan-button{
+        background-color: red;
+        padding: 0.8rem;
+        border: none;
+        border-radius: 0.3rem;
+        color: black;
+    
+    }
+    @media (max-width: 1250px) {
+        .pricing-container{
+            flex-direction: column;
+            height: 100px;
+        }
+    }
+  </style>
+  
+</head>
+<body>
+<div class="pricing-container">
+  <div class="pricing-plan">
+    <div class="plan-title">Basic</div>
+    <div class="plan-price">$10/month</div>
+    <ul class="plan-features">
+      <li>Option One</li>
+      <li>Option Two</li>
+      <li>Option Three</li>
+    </ul>
+    <button class="plan-button">Sign Up</button>
+  </div>
+  
+  <div class="pricing-plan">
+    <div class="plan-title">Standard</div>
+    <div class="plan-price">$15/month</div>
+    <ul class="plan-features">
+      <li>Option One</li>
+      <li>Option Two</li>
+      <li>Option Three</li>
+    </ul>
+    <button class="plan-button">Sign Up</button>
+  </div>
+  <br>
+  <div class="pricing-plan">
+    <div class="plan-title">Premium</div>
+    <div class="plan-price">$20/month</div>
+    <ul class="plan-features">
+      <li>Option One</li>
+      <li>Option Two</li>
+      <li>Option Three</li>
+    </ul>
+    <button class="plan-button">Sign Up</button>
+  </div>
+</div>
+</body>
+</html>

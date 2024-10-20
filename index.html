@@ -1,0 +1,339 @@
+<!DOCTYPE>
+<html lang="en-US">
+
+<head>
+        
+    <meta charset="UTF-8">
+    <meta name="author" content="Muhammed Bello">
+    <meta name="description" content="This is my first HTML project">
+    <link rel="icon" href="logo_html.png">
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <title>HTML Notes</title>
+
+    <!-- <style>
+    html {
+        font-size: 22px;
+    }
+
+    body {
+        background-color: #333;
+        color: whitesmoke;
+    } 
+    </style> -->
+        
+</head>
+
+<body>
+
+<header>    
+    
+    <h1>MY HTML NOTES</h1>
+
+    <figure>
+        <img src="logo_html.png" alt="HTML LOGO" title="HTML image" width="200" height="200">
+        <figcaption>
+            Learning HTML is interesting
+        </figcaption>
+    </figure>
+    
+    <nav>
+        <ul>
+            <li><a href="#ordered">1st type of list</a></li>
+            <li><a href="#unordered">2nd type of list</a></li>
+            <li><a href="#description">3rd type of list</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <!-- 
+    HTML entities
+    &nbsp; to put space 
+    &lt; for less than sign(<) 
+    &gt; for greater than symbol (>)
+    &copy; for copyright symbol
+    -->
+</header>
+
+<main>    
+    <article>
+    <section>
+    <abbr title="Operating System">OS</abbr>
+    <!-- The above is used for abbreviations, 
+    once mouse is hover on the text (OS), it'll show the meaning (tooltip)-->
+    </section>
+
+    <section id="ordered">
+    <p>Lists are of <strong>three types</strong></p>
+    
+    <ol>
+        <li>This is a <mark>test</mark></li>
+        <li>This is also a test</li>
+        <li>Still testing nhi oooo</li>
+    </ol>
+    </section>
+    </article>
+
+    <hr>
+    <div class="circle"></div>
+    <hr>
+
+<aside>
+    <details>
+        <summary>FAQ</summary>
+        <p>This is the FAQ Section</p>
+    </details>
+        
+    <details>
+        <summary>Opening Hours</summary>
+        <p>The shop opens <time datetime"08:00">8AM</time> in the morning for <time datetime="PT3H">3 hours</time></p>
+    </details>
+</aside>    
+
+    <article id="unordered">
+    <ul>
+        <li><P>This is a test</P></li>
+        <li><p>This is also a test</p></li>
+        <address>
+        Tanke, Oke Odo, Ilorin <br>
+        Ariyo, Ibadan, Oyo state.
+        </address>
+    </ul>
+    </article>
+
+    <hr>
+        
+    <article id="description">
+    <dl>
+
+        <dt>
+            DL is the 3rd type of list 
+        </dt>
+        <dd>
+            DL means <em>Description List</em>, used in describing
+        </dd>
+
+        <!-- <em></em> means emphasis, it'll italise the word, but it's not italics -->
+        <p>
+        <dt>
+            DT means Descripton Term
+        </dt>
+        <dd>
+            DD means Description Details
+        </dd>
+        </p>
+        
+    </dl>
+    </article>
+
+    <!-- 
+    There are two types of refrencing
+    1. Absolute Refrence (link to a webpage online)
+    2. Relative refrence (link to an img, another page on our website (not online))
+    -->
+    <article>
+    <hr/>
+<code>
+            &lt;h1&gt; Dave Grey &lt;/h1&gt;
+        </code>
+    <figure>
+        
+    <img src="logo_css.png" alt="CSS LOGO" title="CSS image" width="200" height="200" location="lazy">
+    <figcaption>
+        This was HTML, CSS in a bit
+    </figcaption>
+    
+    </figure>
+    </article>
+
+
+    <article id="table">
+        <section>
+            <table>
+                <thead>
+                <caption>My Daily Schedule</caption>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th>Time</th>
+                    <th>Activity</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th>Morning</th>
+                        <td><time datetime="06:00">6AM</time> - <time datetime="08:00">8AM</time></td>
+                        <td>Revise and Rest</td>
+                    </tr>
+
+                    <tr>
+                        <th>Afternoon</th>
+                        <td><time datetime="09:00">9AM</time> - <time datetime="16:00">4PM</time></td>
+                        <td>Go to School</td>
+                    </tr>
+
+                    <tr>
+                        <th>Evening</th>
+                        <td><time datetime="17:00">5PM</time> - <time datetime="22:00">10PM</time></td>
+                        <td>Go Out</td>
+                    </tr>
+
+                    <tr>
+                        <th>Night</th>
+                        <td rowspan="3">Remaining Time</td>
+                        <td>Sleep</td>
+                    </tr>
+
+                    <tr>
+                        <th>Midnight</th>
+                        <td>Pray</td>
+                    </tr>
+                </tbody>
+
+                <tfooter>
+                    <th>Summary</th>
+                    <td colspan="3">This is just a generated rough schedule of how I go about my day</td>
+                </tfooter>
+            </table>
+        </section>
+    </article>
+
+    <hr>
+    
+    <article id="contact">
+        <h2>Contact Us</h2>
+
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Personal Information</legend>
+            <p>
+            <label for="firstname">First Name</label>
+            <input id="firstname" type="text" placeholder="Put your name here" name="firstname" required autocomplete="on">
+            </p>
+            <!-- autofocus can only be used in one input on a form -->
+            <p>
+            <label for="lastname">Last Name</label>
+            <input id="lastname" type="text" placeholder="Put your last name here" name="lastname" required autocomplete="on">
+            </p>
+            <label for="password">Password</label>
+            <input id="password" type="password" placeholder="Enter a Password" name="password" required>
+            <!-- autocomplete does not work on password -->
+            <p>            
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="tel" name="phone" placeholder="666-666-666" pattern"[0-9]{3}[0-9]{3}[0-9]{4}" required autocomplete="on">
+            </p>
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Put an active email here" name="email" required autocomplete="on">
+            <p>
+            <label for="dateofbirth">Date of Birth</label>
+            <input id="dateofbirth" type="date" placeholder="Date of Birth" name="dateofbirth" required autocomplete="on">
+            </p>
+            <p>
+            <label for="decade">Favourite Decade</label>
+            <input id="decade" type="number" name="decade" value="1960" min=1960" max="2006">
+            </p>
+            
+            <p>
+            <label for="state">State</label>
+                <select id="state" name="state">
+                    <!-- we use multiple whwn we want users ti=o choose multiple options and size attribute when to tell the number of options we want to display on the screen -->
+                    <option value="select" selected >Select</option>
+
+                    <optgroup label="Popular States">
+                    <option value="abuja">Abuja</option>
+                    <option value="lagos">Lagos</option>
+                    <option value="porthacourt">Porthacourt</option>
+                    </optgroup>
+
+                    <optgroup label="Yoruba States">
+                    <option value="oyo">Oyo</option>
+                    <option value="osun">Osun</option>
+                    <option value="ogun">Ogun</option>
+                    </optgroup>
+
+                    <optgroup label="North Central">
+                    <option value="kwara">Kwara</option>
+                    <option value="niger">Niger</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+            <label for="lga">Local Government Area</label>
+            <input type="text" name="lga" id="lga" list="lga-list">
+            <datalist id="lga-list">
+                <option value="Omu Aran">
+                <option value="Ilorin South">
+                <option value="Barutin">
+                <option value="Others">
+            </datalist>
+                
+            </p>
+            </fieldset>
+            
+            <br>
+            
+            <fieldset>
+                <legend>Favourites</legend>
+                <p>
+                    <input type="radio" id="reading" name="reading" value="reading">
+                    <label for="reading">Reading</label>
+                </p>
+                <p>
+                    <input type="radio" id="playing" name="favourites" value="playing">
+                    <label for="playing">Playing</label>
+                </p>
+                <p>
+                    <input type="radio" id="chatting" name="favourites" value="chatting">
+                    <label for="chatting">Chatting</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Fav Subjects</legend>
+                <p>
+                    <input type="checkbox" id="english" name="subjects" value="english">
+                    <label for="english">English</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="math" name="subjects" value="math">
+                    <label for="math">Mathematics</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="chm" name="subjects" value="chm">
+                    <label for="chm">Chemistry</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="phy" name="subjects" value="phy">
+                    <label for="phy">Physics</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="bio" name="subjects" value="bio">
+                    <label for="bio">Biology</label>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Leave a message:</legend>
+                <textarea name="message" id="message" cols="25" rows="8" placeholder="Type a message">Start typing...</textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+        </form>
+    <form></form>
+        
+    </article>
+    
+</main>
+
+<footer>    
+    <hr>
+    <a href="about.html"> &lt;&lt;&lt; &copy; Muhammed Bello, 2024 &gt;&gt;&gt;</a>
+    <br>
+    <a href="#" >Back to Top</a>
+</footer>
+    
+</body>
+    
+</html>
